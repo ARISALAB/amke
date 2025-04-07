@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ΑΜΚΕ ΔΙΕΘΝΗΣ ΔΡΑΣΗ</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    /* TOP BUTTON */
+    #topBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      font-size: 20px;
+      background-color: #005f73;
+      color: white;
+      border: none;
+      padding: 12px 16px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    #topBtn:hover {
+      background-color: #0a9396;
+    }
+
+    .culture-img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    .join-button {
+  background: #F4D35E;
+  color: #2C3E50;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1em;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.join-button:hover {
+  background: #e9c846;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+form input, form select {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  background: #f9f9f9;
+  color: #2C3E50;
+}
+
+form select {
+  appearance: none;
+}
+
+form input:focus, form select:focus {
+  border-color: #F4D35E;
+  outline: none;
+}
+
+form button {
+  background: #F4D35E;
+  color: #2C3E50;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #e9c846;
+}
+/* Modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(44, 62, 80, 0.8);
+}
+
+.modal-content {
+  background-color: #ffffff;
+  margin: 8% auto;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #2C3E50;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input, form select {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  width: 100%;
+  background: #f9f9f9;
+  color: #2C3E50;
+}
+
+form button {
+  background: #F4D35E;
+  color: #2C3E50;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #e9c846;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Α.Μ.Κ.Ε. ΔΙΕΘΝΗΣ ΔΡΑΣΗ - INTERACTION</h1>
+    <p>Σύγχρονη Πολιτιστική Παρουσία με Παγκόσμια Προοπτική</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">ΑΡΧΙΚΗ</a></li>
+        <li><a href="about.html">ΣΧΕΤΙΚΑ</a></li>
+        <li><a href="projects.html">ΔΡΑΣΕΙΣ</a></li>
+        <li><a href="contact.html">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="image-container">
+    <img class="culture-img" src="1.JPG" alt="Πολιτιστική εικόνα">
+    <div class="overlay-text">Προβάλλουμε τον Ελληνικό Πολιτισμό Διεθνώς</div>
+  </div>
+  
+
+  <section id="about" class="content-section">
+    <h3>Σχετικά με εμάς</h3>
+    <p>
+      Η <strong>Α.Μ.Κ.Ε. ΔΙΕΘΝΗΣ ΔΡΑΣΗ - INTERACTION</strong> είναι μια Αστική Μη Κερδοσκοπική Εταιρεία που δραστηριοποιείται
+      στον τομέα του πολιτισμού, της τέχνης και της δημιουργικότητας.
+      Σκοπός μας είναι η ενίσχυση της προσφοράς της Ελλάδας και των σύγχρονων Ελλήνων καλλιτεχνών και δημιουργών
+      στην παγκόσμια πολιτιστική αρένα μέσα από συνεργασίες, φεστιβάλ, εκπαιδευτικά προγράμματα και καλλιτεχνικές παραγωγές.
+    </p>
+  </section>
+
+ <section id="projects">
+  <div class="container">
+    <h3 style="color: white;     
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #F4D35E;
+    display: inline-block;
+    padding-bottom: 5px;">Δράσεις</h3>
+    <div class="project-gallery">
+      <img src="7.jpg" alt="Φεστιβάλ Σύγχρονης Τέχνης">
+      <img src="2.jpg" alt="Εργαστήρι Θεατρικής Γραφής">
+      <img src="3.jpg" alt="Ανταλλαγή Αθήνα - Βερολίνο">
+      <img src="4.jpg" alt="Ψηφιακή Έκθεση">
+      <img src="5.jpg" alt="Ψηφιακή Έκθεση">
+      <img src="6.jpg" alt="Ψηφιακή Έκθεση">
+    </div>
+  </div>
+</section>
+
+<section id="join-us" class="content-section1">
+  <div class="content-wrapper">
+    <h3>Γίνε μέλος, Γίνε εθελοντής</h3>
+    <p><strong>Γίνε μέλος:</strong> Η συμμετοχή σου ως μέλος της ομάδας μας δεν είναι απλώς μια εγγραφή — είναι μια πράξη δέσμευσης προς έναν καλύτερο κόσμο. Ως μέλος, έχεις τη δυνατότητα να συμμετέχεις ενεργά στις δράσεις μας και να γίνεις μέρος μιας κοινότητας με κοινές αξίες.</p>
+    <p><strong>Γίνε εθελοντής:</strong> Αν θέλεις να προσφέρεις χρόνο, δημιουργικότητα και ενέργεια, μπορείς να συμβάλεις στις δράσεις μας και να αποκτήσεις πολύτιμες εμπειρίες μέσα από την προσφορά.</p>
+    
+    <!-- Κουμπί scroll στη φόρμα -->
+    <a href="#" class="join-button" onclick="openModal()">Συμμετοχή</a>
+  </div>
+</section>
+
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h3>Φόρμα Εγγραφής</h3>
+    <form action="https://formsubmit.co/akronservices@mail.com" method="POST" onsubmit="showSuccessMessage(event)">
+      <input type="text" name="Ονοματεπώνυμο" placeholder="Ονοματεπώνυμο" required>
+      <input type="email" name="Email" placeholder="Email" required>
+      <input type="tel" name="Τηλέφωνο" placeholder="Τηλέφωνο" required>
+      <input type="text" name="Τόπος Κατοικίας" placeholder="Τόπος Κατοικίας" required>
+      <input type="text" name="Διεύθυνση" placeholder="Διεύθυνση" required>
+      <select name="Επιλογή" required>
+        <option value="">Επιλέξτε ρόλο</option>
+        <option value="Μέλος">Γίνε μέλος</option>
+        <option value="Εθελοντής">Γίνε εθελοντής</option>
+      </select>
+    
+      <!-- Μυστικά πεδία για redirect και προστασία -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://example.com/success.html">
+    
+      <button type="submit">Αποστολή</button>
+    </form>
+    
+    <div id="successMessage" style="display:none; color:green; margin-top:15px; font-weight:bold;">
+      Η φόρμα υποβλήθηκε επιτυχώς! Θα επικοινωνήσουμε μαζί σας σύντομα.
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+<section id="contact" class="content-section2">
+  <div class="content-wrapper">
+    <h3>Επικοινωνήστε μαζί μας</h3>
+    <!-- Οδηγεί σε άλλη σελίδα επαφής (π.χ. contact.html) -->
+    <a href="contact.html">
+      <img src="200.png" alt="Εικόνα Επικοινωνίας" class="contact-image">
+    </a>
+  </div>
+</section>
+
+
+  <footer>
+    <p>&copy; Α.Μ.Κ.Ε. ΔΙΕΘΝΗΣ ΔΡΑΣΗ - INTERACTION | All rights reserved</p>
+  </footer>
+
+  <!-- Top Button -->
+  <button onclick="topFunction()" id="topBtn" title="Πήγαινε στην κορυφή">⬆️</button>
+
+  <script>
+    // Εμφάνιση κουμπιού όταν κάνεις scroll
+    const topButton = document.getElementById("topBtn");
+
+    window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        topButton.style.display = "block";
+      } else {
+        topButton.style.display = "none";
+      }
+    };
+
+    // Scroll to top
+    function topFunction() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    function openModal() {
+  document.getElementById('modal').style.display = 'block';
+}
+
+function closeModal() {
+  document.getElementById('modal').style.display = 'none';
+}
+
+// Κλείσιμο αν πατηθεί έξω από το modal
+window.onclick = function(event) {
+  const modal = document.getElementById('modal');
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+}
+
+  </script>
+  <script>
+    function showSuccessMessage(event) {
+      const message = document.getElementById("successMessage");
+      message.style.display = "block";
+  
+      // Μπορείς να προσθέσεις delay για να το δει ο χρήστης
+      setTimeout(() => {
+        message.style.display = "none";
+      }, 4000);
+    }
+  </script>
+  
+</body>
+</html>
